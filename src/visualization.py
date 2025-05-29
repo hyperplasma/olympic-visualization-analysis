@@ -93,7 +93,9 @@ def plot_wordcloud(text_series, save_path=None):
     text = ' '.join(text_series.dropna().astype(str))
     custom_stopwords = set(STOPWORDS)
     custom_stopwords.update([
-        'want', 'be', 'lot', 'get', 'make', 'go', 'see', 'take', 'would', 'could', 'should', 'really', 'much', 'many', 'one', 'two', 'three', 'also', 'may', 'might', 'can', 'will', 'im', 'like', 'just', 'exercise', 'fit'
+        'want', 'be', 'lot', 'get', 'make', 'go', 'see', 'take', 'would', 'could', 'should', 
+        'really', 'much', 'many', 'one', 'two', 'three', 'also', 'may', 'might', 'can', 'will',
+        'im', 'like', 'just', 'exercise', 'fit'
     ])
     font_path = '/System/Library/Fonts/STHeiti Medium.ttc'
     wc = WordCloud(font_path=font_path, width=800, height=400, background_color='white', stopwords=custom_stopwords).generate(text)

@@ -41,3 +41,4 @@ def china_trend_analysis(olympics_df, gdp_pop_df):
     china_medals = olympics_df[olympics_df['noc'] == 'CHN'].groupby('year').size().reset_index(name='medal_count')
     china_gdp_pop = gdp_pop_df[gdp_pop_df['Country Name'] == 'China']
     return china_medals, china_gdp_pop
+
