@@ -39,6 +39,22 @@
 2. 根据 `requirements.txt`安装依赖。
 3. 运行 `python main.py`，所有图表将输出至 `output/figures/` 目录。
 
+## 依赖库
+
+项目使用的主要Python库包括：
+
+* **matplotlib** (3.7.2): 用于创建静态、动画和交互式可视化
+* **numpy** (1.26.4): 提供数值计算支持
+* **pandas** (2.0.3): 用于数据处理和分析
+* **seaborn** (0.12.2): 基于matplotlib的统计数据可视化
+* **wordcloud** (1.9.4): 用于生成词云图
+
+可通过以下命令安装所需依赖：
+
+```bash
+pip install -r requirements.txt
+```
+
 ## 致谢
 
 - [Kaggle Olympics Dataset](https://www.kaggle.com/datasets/the-guardian/olympic-games)
