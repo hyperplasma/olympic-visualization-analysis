@@ -36,7 +36,7 @@
 ## 快速开始
 
 1. 克隆仓库并准备好上述数据集（保持目录结构一致）。
-2. 安装依赖（如 pandas、matplotlib、seaborn、wordcloud）。
+2. 根据 `requirements.txt`安装依赖。
 3. 运行 `python main.py`，所有图表将输出至 `output/figures/` 目录。
 
 ## 致谢
