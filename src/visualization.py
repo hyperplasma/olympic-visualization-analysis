@@ -33,13 +33,10 @@ def plot_medal_stacked_bar(medal_type_df, top_n=20, save_path=None):
         plt.savefig(save_path)
     plt.show()
 
-def plot_medal_gdp_scatter(merged_df, save_path=None, annotate_top_n=15):
+def plot_medal_gdp_scatter(merged_df, save_path=None):
     merged_df = merged_df.dropna(subset=['GDP_num', 'medal_count'])
     plt.figure(figsize=(10, 6))
     plt.scatter(merged_df['GDP_num'], merged_df['medal_count'], alpha=0.7)
-    top = merged_df.sort_values('medal_count', ascending=False).head(annotate_top_n)
-    for _, row in top.iterrows():
-        plt.annotate(row['region'], (row['GDP_num'], row['medal_count']), fontsize=9, xytext=(5,2), textcoords='offset points')
     plt.xlabel('GDP（美元）')
     plt.ylabel('奖牌总数')
     plt.title('奖牌总数与GDP关系')
