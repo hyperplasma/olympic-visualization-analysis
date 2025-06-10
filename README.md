@@ -1,5 +1,7 @@
 # Olympic Visualization Analysis
 
+[Hyperplasma](https://www.hyperplasma.top) [《奥运体育健康经济大数据可视化分析》——数据采集与可视化项目](https://www.hyperplasma.top/article/12872/)
+
 本项目通过数据清洗、分析与可视化，系统性地探索了奥运奖牌、各国GDP、人口、幸福指数等多维度数据之间的关系。项目包含多种统计图表，支持对奥运奖牌分布、经济与社会指标的多角度分析。
 
 ## 主要方法
@@ -11,11 +13,11 @@
 
 ## 使用的数据集
 
-- **奥运奖牌数据**：`Olympics-Dataset-master/clean-data/results.csv` 包含历届奥运会各项目奖牌获得者信息。
-- **NOC与地区映射**：`Olympics-Dataset-master/clean-data/noc_regions.csv` 用于将NOC代码映射为国家/地区名。
-- **全球GDP与人口数据**：`2020-All Country_data_GDP, Population, Electricity-consumption and many more.csv `包含各国GDP（购买力平价）与人口等经济指标。
-- **世界幸福指数数据**：`Exploring-World-Happiness-main/Resources/2020.csv` 包含各国幸福指数、GDP等社会指标。
-- **健身问卷数据**：`fitness analysis.csv` 用于生成健身动机词云。
+- **奥运奖牌数据**：`data/Olympics-Dataset-master/clean-data/results.csv` 包含历届奥运会各项目奖牌获得者信息。
+- **NOC与地区映射**：`data/Olympics-Dataset-master/clean-data/noc_regions.csv` 用于将NOC代码映射为国家/地区名。
+- **全球GDP与人口数据**：data/ `2020-All Country_data_GDP, Population, Electricity-consumption and many more.csv `包含各国GDP（购买力平价）与人口等经济指标。
+- **世界幸福指数数据**：`data/Exploring-World-Happiness-main/Resources/2020.csv` 包含各国幸福指数、GDP等社会指标。
+- **健身问卷数据**：`data/fitness analysis.csv` 用于生成健身动机词云。
 - 其他可选数据集
 
 ## 主要可视化图表
@@ -61,6 +63,10 @@ pip install -r requirements.txt
 - [World Happiness Report](https://worldhappiness.report/)
 - 其他公开数据集
 - [Hyperplasma](www.hyperplasa.top)
+
+## LICENSE
+
+[LICENSE](LICENSE)
 
 ---
 
